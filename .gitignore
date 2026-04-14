@@ -3,3 +3,4 @@
 *.obj
 *.tds
 # CARPETAS
+.vscode/
