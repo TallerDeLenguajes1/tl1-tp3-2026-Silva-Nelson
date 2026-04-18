@@ -1,7 +1,5 @@
 #ifndef FUNCIONES_H
 #define FUNCIONES_H
-#include <stdio.h>
-#include <string.h>
 
 void mostrarPersonas(char **nombre, int cant)
 {
