@@ -3,6 +3,15 @@
 #include <stdio.h>
 #include <string.h>
 
+void mostrarPersonas(char **nombre, int cant)
+{
+    for (int i = 0; i < cant; i++)
+    {
+        printf("%s\t", nombre[i]);
+    }
+    
+}
+
 // Cambiamos el nombre a la de ID
 void BuscaNombrePorId(char **nombres, int id, int cant) {
     if (id >= 0 && id < cant) {
@@ -17,11 +26,10 @@ int BuscaNombrePorPalabra(char **nombres, char palabra[], int cant) {
     for (int i = 0; i < cant; i++) {
         if (strstr(nombres[i], palabra) != NULL){
             return i;
-        }else
-        {
-            return -1;
         }
     }
+    return -1;
 }
+
 
 #endif
