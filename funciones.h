@@ -29,5 +29,13 @@ int BuscaNombrePorPalabra(char **nombres, char palabra[], int cant) {
     return -1;
 }
 
+void liberar_memoria(char **nombres, int cant)
+{
+    for (int i = 0; i < cant; i++)
+    {
+        free(nombres[i]);
+    }
+    
+}
 
 #endif
